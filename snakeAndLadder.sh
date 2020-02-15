@@ -2,6 +2,7 @@
 
 
 
+
 echo "         " "************************************"
 echo "         " "* WELCOME TO SNAKE AND LADDER GAME *"
 echo "         " "*                                  *"
@@ -14,10 +15,54 @@ for(( i=$a; i>0; i--))
 	     then
 		val=$((i*a))
 		gap=-1
+=======
+playerFunc()
+    {
+	echo "Snake and Ladder positions"
+	echo "START=1  FINISH=100"
+	echo "LADDERS : 6 to 27"
+	echo "        : 25 to 55"
+	echo "        : 37 to 65"
+	echo "        : 59 to 80"
+	echo "        : 74 to 93"
+	echo "SNAKES  : 39 to 3"
+	echo "        : 55 to 36"
+	echo "        : 61 to 2"
+	echo "        : 75 to 37"
+	echo "        : 98 to 70"
+
+	player=0
+
+ while((player<100))
+		do
+			#for dice
+			random=$(( 1 +  RANDOM % 6 ))
+			echo "Roll Dice = $random"
+
+			#for case
+			cases=$(( RANDOM % 3))
+			echo "case value : $cases"
+case $cases in
+0)
+	player=$player
+	echo "Player is at position : $player"
+;;
+1)
+	player=$(( player+random ))
+	echo "Position of player is : $player"
+
+;;
+2)
+	if(($((player-random))>0))
+	then
+	player=$((player-random))
+	echo "Player is at position : $player"
+>>>>>>> useCase4-WinningPosition
 	else
-		val=$(($(($i-1))*$a+1))
-		gap=1
+	player=$player
+	echo "Player is at position : $player"
 	fi
+<<<<<<< HEAD
 for((j=$a; j>0; j--))
     do
 	if(($i==1))
@@ -81,3 +126,10 @@ esac
 }
 player
 
+=======
+;;
+esac
+done
+}
+playerFunc
+>>>>>>> useCase4-WinningPosition
