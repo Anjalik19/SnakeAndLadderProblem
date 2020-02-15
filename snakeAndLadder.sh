@@ -13,7 +13,7 @@ player()
 	echo "        : 98 to 7"
 	random=$(( 1 +  RANDOM % 6 ))
 	echo "Roll Dice = $random"
-	player=1
+	player=0
 	cases=$(( RANDOM % 3))
 	echo "case value : $cases"
 
