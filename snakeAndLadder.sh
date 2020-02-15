@@ -1,5 +1,4 @@
 #!/bin/sh
-#!/bin/sh
 playerFunc()
     {
 	echo "Snake and Ladder positions"
