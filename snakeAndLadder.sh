@@ -1,4 +1,5 @@
 #!/bin/sh
+
 echo "         " "************************************"
 echo "         " "* WELCOME TO SNAKE AND LADDER GAME *"
 echo "         " "*                                  *"
@@ -29,3 +30,6 @@ for((j=$a; j>0; j--))
 echo
 echo "|----------------------------------------------------------|"
   done
+=======
+echo "Game Started"
+
