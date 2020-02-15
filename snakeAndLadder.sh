@@ -3,7 +3,7 @@ echo "         " "************************************"
 echo "         " "* WELCOME TO SNAKE AND LADDER GAME *"
 echo "         " "*                                  *"
 echo "         " "************************************"
-echo " " 
+echo " "
 a=10
 for(( i=$a; i>0; i--))
      do
