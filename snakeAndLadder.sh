@@ -1,4 +1,5 @@
 #!/bin/sh
+<<<<<<< HEAD
 
 
 
@@ -16,6 +17,8 @@ for(( i=$a; i>0; i--))
 		val=$((i*a))
 		gap=-1
 =======
+=======
+>>>>>>> useCase5-ExactWinningPosition
 playerFunc()
     {
 	echo "Snake and Ladder positions"
@@ -42,12 +45,17 @@ playerFunc()
 			#for case
 			cases=$(( RANDOM % 3))
 			echo "case value : $cases"
+<<<<<<< HEAD
+=======
+
+>>>>>>> useCase5-ExactWinningPosition
 case $cases in
 0)
 	player=$player
 	echo "Player is at position : $player"
 ;;
 1)
+<<<<<<< HEAD
 	player=$(( player+random ))
 	echo "Position of player is : $player"
 
@@ -127,9 +135,32 @@ esac
 player
 
 =======
+=======
+	if(($((player+random))>100))
+	then
+	player=$player
+	else
+	player=$((player+random))
+	echo "Position of player is : $player"
+	fi
+
+;;
+2)
+	if(($((player-random))>0))
+	then
+	player=$((player-random))
+	echo "Player is at position : $player"
+	else
+	player=$player
+	echo "Player is at position : $player"
+	fi
+>>>>>>> useCase5-ExactWinningPosition
 ;;
 esac
 done
 }
 playerFunc
+<<<<<<< HEAD
 >>>>>>> useCase4-WinningPosition
+=======
+>>>>>>> useCase5-ExactWinningPosition
