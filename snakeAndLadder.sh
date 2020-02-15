@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 echo "         " "************************************"
 echo "         " "* WELCOME TO SNAKE AND LADDER GAME *"
 echo "         " "*                                  *"
@@ -32,3 +33,14 @@ echo "|----------------------------------------------------------|"
   done
 =======
 echo "Game Started"
+=======
+rolls()
+   {
+	for((i=0;i<6;i++))
+	     do
+		random=$(( 1 + RANDOM % 6 ))
+		    done
+			echo "Number after rolling Dice : $random"
+   }
+rolls
+
