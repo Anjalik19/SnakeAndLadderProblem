@@ -1,6 +1,6 @@
 #!/bin/sh
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -16,15 +16,15 @@ playerFunc()
 
 	player=0
 
- while((player<100))
-		do
-			#for dice
-			random=$(( 1 +  RANDOM % 6 ))
-			echo "Roll Dice = $random"
+while((player<100))
+	do
+		#for dice
+		random=$(( 1 +  RANDOM % 6 ))
+		echo "Roll Dice = $random"
 
-			#for case
-			cases=$(( RANDOM % 3))
-			echo "case value : $cases"
+		#for case
+		cases=$(( RANDOM % 3))
+		echo "case value : $cases"
 
 case $cases in
 0)
