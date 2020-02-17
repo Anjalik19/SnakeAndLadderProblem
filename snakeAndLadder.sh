@@ -38,16 +38,16 @@ echo "Game Started"
 
 =======
 rolls()
-   {
+{
 	random=$(( 1 + RANDOM % 6 ))
 	echo "Number after rolling Dice : $random"
-   }
+}
 rolls
 
 
 =======
 player()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -84,7 +84,7 @@ player
 
 ======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -137,7 +137,7 @@ playerFunc
 
 =======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -196,7 +196,7 @@ playerFunc
 
 =======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -331,7 +331,7 @@ fi
 }
 
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
