@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "Game Started"
+echo " Game Started "
