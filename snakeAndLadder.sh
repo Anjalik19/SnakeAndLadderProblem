@@ -12,7 +12,7 @@ for(( i=$a; i>0; i--))
 	     then
 		val=$((i*a))
 		gap=-1
-	else
+		else
 		val=$(($(($i-1))*$a+1))
 		gap=1
 	fi
