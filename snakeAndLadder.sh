@@ -29,7 +29,7 @@ while((player<100))
 case $cases in
 0)
 	player=$player
-	echo "Player is at position : $player"
+	echo " Player is at position : $player "
 ;;
 1)
 	if(($((player+random))>100))
@@ -37,7 +37,7 @@ case $cases in
 	player=$player
 	else
 	player=$((player+random))
-	echo "Position of player is : $player"
+	echo " Position of player is : $player "
 	fi
 
 ;;
