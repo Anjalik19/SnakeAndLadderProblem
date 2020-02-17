@@ -23,7 +23,7 @@ case $cases in
 	echo "Player is at position : $player"
 ;;
 1)
-	player=$(( $player+$random ))
+	player=$(($player+$random))
 	echo "Position of player is : $player"
 ;;
 2)
