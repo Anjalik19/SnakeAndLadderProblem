@@ -68,7 +68,7 @@ fi
 }
 
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -88,7 +88,7 @@ playerFunc()
 
 while((player1<100 && player2<100))
 	do
-count=$((count+1))
+		count=$((count+1))
 		echo "Number of time Dice was played : $count"
 
 	if(( $((count%2))==0 ))
