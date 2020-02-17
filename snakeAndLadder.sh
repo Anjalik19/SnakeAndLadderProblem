@@ -38,16 +38,16 @@ echo "Game Started"
 
 =======
 rolls()
-   {
+{
 	random=$(( 1 + RANDOM % 6 ))
 	echo "Number after rolling Dice : $random"
-   }
+}
 rolls
 
 
 =======
 player()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -84,7 +84,7 @@ player
 
 ======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -137,7 +137,7 @@ playerFunc
 
 =======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -153,15 +153,15 @@ playerFunc()
 
 	player=0
 
- while((player<100))
-		do
-			#for dice
-			random=$(( 1 +  RANDOM % 6 ))
-			echo "Roll Dice = $random"
+while((player<100))
+	do
+		#for dice
+		random=$(( 1 +  RANDOM % 6 ))
+		echo "Roll Dice = $random"
 
-			#for case
-			cases=$(( RANDOM % 3))
-			echo "case value : $cases"
+		#for case
+		cases=$(( RANDOM % 3))
+		echo "case value : $cases"
 
 case $cases in
 0)
@@ -196,7 +196,7 @@ playerFunc
 
 =======
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
@@ -255,7 +255,7 @@ case $cases in
 	fi
 ;;
 esac
-	done
+done
 
 }
 playerFunc
@@ -264,16 +264,16 @@ playerFunc
 =======
 diceRoll()
 {
-		#for dice
-		random=$(( 1 +  RANDOM % 6 ))
-		echo "Roll Dice = $random"
+	#for dice
+	random=$(( 1 +  RANDOM % 6 ))
+	echo "Roll Dice = $random"
 }
 switchCase()
 {
 
-		#for case
-		cases=$(( RANDOM % 3))
-		echo "case value : $cases"
+	#for case
+	cases=$(( RANDOM % 3))
+	echo "case value : $cases"
 		echo " "
 case $cases in
 0)
@@ -331,7 +331,7 @@ fi
 }
 
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
