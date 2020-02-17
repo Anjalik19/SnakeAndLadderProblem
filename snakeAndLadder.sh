@@ -39,10 +39,10 @@ case $cases in
 	if(($((player-random))>0))
 	then
 	player=$((player-random))
-	echo "Player is at position : $player"
+	echo " Player is at position : $player "
 	else
 	player=$player
-	echo "Player is at position : $player"
+	echo " Player is at position : $player "
 	fi
 ;;
 esac
