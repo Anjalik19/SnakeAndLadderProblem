@@ -39,11 +39,8 @@ echo "Game Started"
 =======
 rolls()
    {
-	for((i=0;i<6;i++))
-	     do
-		random=$(( 1 + RANDOM % 6 ))
-		    done
-			echo "Number after rolling Dice : $random"
+	random=$(( 1 + RANDOM % 6 ))
+	echo "Number after rolling Dice : $random"
    }
 rolls
 
@@ -125,11 +122,11 @@ case $cases in
 2)
 	if(($((player-random))>0))
 	then
-	player=$((player-random))
-	echo "Player is at position : $player"
+		player=$((player-random))
+		echo "Player is at position : $player"
 	else
-	player=$player
-	echo "Player is at position : $player"
+		player=$player
+		echo "Player is at position : $player"
 	fi
 ;;
 esac
@@ -174,21 +171,21 @@ case $cases in
 1)
 	if(($((player+random))>100))
 	then
-	player=$player
+		player=$player
 	else
-	player=$((player+random))
-	echo "Position of player is : $player"
+		player=$((player+random))
+		echo "Position of player is : $player"
 	fi
 
 ;;
 2)
 	if(($((player-random))>0))
 	then
-	player=$((player-random))
-	echo "Player is at position : $player"
+		player=$((player-random))
+		echo "Player is at position : $player"
 	else
-	player=$player
-	echo "Player is at position : $player"
+		player=$player
+		echo "Player is at position : $player"
 	fi
 ;;
 esac
@@ -238,23 +235,23 @@ case $cases in
 1)
 	if(($((player+random))>100))
 	then
-	player=$player
+		player=$player
 	else
-	player=$((player+random))
-	echo "Position of player is : $player"
-	echo " "
+		player=$((player+random))
+		echo "Position of player is : $player"
+		echo " "
 	fi
 
 ;;
 2)
 	if(($((player-random))>0))
 	then
-	player=$((player-random))
-	echo "Player is at position : $player"
+		player=$((player-random))
+		echo "Player is at position : $player"
 	else
-	player=$player
-	echo "Player is at position : $player"
-	echo " "
+		player=$player
+		echo "Player is at position : $player"
+		echo " "
 	fi
 ;;
 esac
@@ -293,22 +290,22 @@ if(( $((count%2))==0 ))
 
 	if(($((player1+random))>100))
 	then
-	player1=$player1
+		player1=$player1
 	else
-	player1=$((player1+random))
-	echo "Position of player 1 is : $player1"
-	echo " "
+		player1=$((player1+random))
+		echo "Position of player 1 is : $player1"
+		echo " "
 	fi
 
         else
 
 	if(($((player2+random))>100))
 	then
-	player2=$player2
+		player2=$player2
 	else
-	player2=$((player2+random))
-	echo "Position of player 2 is : $player2"
-	echo " "
+		player2=$((player2+random))
+		echo "Position of player 2 is : $player2"
+		echo " "
 	fi
 fi
 
@@ -363,14 +360,14 @@ count=$((count+1))
 			switchCase
 			if((player1==100))
 			then
-			echo "!! Player 1 Won !!"
+				echo "!! Player 1 Won !!"
 			fi
 	else
 			diceRoll
 			switchCase
 			if((player2==100))
 			then
-			echo "!! Player 2 Won !!"
+				echo "!! Player 2 Won !!"
 			fi
 	fi
 
