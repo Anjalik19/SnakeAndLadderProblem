@@ -30,7 +30,7 @@ if(( $((count%2))==0 ))
 	player1=$player1
 	else
 	player1=$((player1+random))
-	echo "Position of player 1 is : $player1"
+	echo " Position of player 1 is : $player1 "
 	echo " "
 	fi
 
