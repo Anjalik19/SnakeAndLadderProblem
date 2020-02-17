@@ -1,6 +1,6 @@
 #!/bin/sh
 playerFunc()
-    {
+{
 	echo "Snake and Ladder positions"
 	echo "START=1  FINISH=100"
 	echo "LADDERS : 6 to 27"
