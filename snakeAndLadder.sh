@@ -32,7 +32,7 @@ while((player<100))
 case $cases in
 0)
 	player=$player
-	echo "Position of player is $player"
+	echo " Position of player is $player "
 	echo " "
 
 ;;
